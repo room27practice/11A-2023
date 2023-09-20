@@ -13,7 +13,7 @@
             //  Console.WriteLine($"Broiat strani na zar1 e: {d1.Sides}. A cveta na zarcheto e {d1.Color}");
             Console.WriteLine(new string('=', 20));
             d1.Color = "Magenta";
-            d1.Sides = 15;       
+            d1.Sides = 15;
 
             d1.PresentInfo();
             for (int i = 0; i < 10; i++)
@@ -35,7 +35,7 @@
 
             Console.WriteLine("Broiat strani na zar2 e: " + d2.Sides);
 
-            Dice d3 = new Dice { Sides=12, Color = "Oranjevo" };
+            Dice d3 = new Dice { Sides = 12, Color = "Oranjevo" };
 
             d3.PresentInfo();
 
@@ -48,7 +48,8 @@
         public int Sides { get => sides; set => sides = value; }
 
         string color = "white";
-        public string Color { get => color; set => color = value; }
+        public string Color
+        { get => color; set => color = value; }
 
         public void PresentInfo()
         {
@@ -58,14 +59,32 @@
         public int RollDice()
         {
             Random rnd = new Random();
-            int result = rnd.Next(1, Sides+1);
+            int result = rnd.Next(1, Sides + 1);
             return result;
+        }
+    }
+
+    public class Desk
+    {
+        string name;
+        public string Name { get => name; set => name = value; }
+
+        private string manufacturer;
+        public string Manufacturer
+        {
+            get { return manufacturer; }
+            set { manufacturer = value; }
+        }
+
+        private string imageURL;
+        public string ImageURL
+        {
+            get { return imageURL; }
+            set { imageURL = value; }
         }
 
 
     }
-
-
 
 
 
