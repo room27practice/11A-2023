@@ -4,6 +4,7 @@
     {
         static void Main()
         {
+            #region first
             Console.WriteLine("Hello, World!");
             Dice d1 = new Dice();
             Dice d2 = new Dice();
@@ -38,6 +39,11 @@
             Dice d3 = new Dice { Sides = 12, Color = "Oranjevo" };
 
             d3.PresentInfo();
+            #endregion
+
+            Desk desk1 = new Desk();
+            desk1.Price = 76.67m;
+            Console.WriteLine(desk1.Price);
 
         }
     }
@@ -45,7 +51,25 @@
     public class Dice
     {
         int sides;
-        public int Sides { get => sides; set => sides = value; }
+        public int Sides
+        {
+            get => sides;
+            set
+            {
+                if (value <= 1)
+                {                  
+                    sides = 2;
+                }
+                else if (value > 24)
+                {
+                    sides = 24;
+                }
+                else
+                {
+                    sides = value;
+                }
+            }
+        }
 
         string color = "white";
         public string Color
@@ -66,13 +90,34 @@
 
     public class Desk
     {
-        string name;
-        public string Name { get => name; set => name = value; }
+        private string name;
+
+        public decimal Price { get; set; }
+
+        public string Name
+        {
+            get
+            {
+                return name.ToUpper().First() + ".";
+            }
+            set
+            {
+                if (value.Length < 2)
+                {
+                    name = "Undefined";
+
+                }
+                else
+                {
+                    name = value;
+                }
+            }
+        }
 
         private string manufacturer;
         public string Manufacturer
         {
-            get { return manufacturer; }
+            get => manufacturer;
             set { manufacturer = value; }
         }
 
