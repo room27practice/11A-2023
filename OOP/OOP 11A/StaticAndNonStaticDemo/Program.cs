@@ -4,6 +4,9 @@
     {
         static void Main()
         {
+           
+
+
             User.TownName = "Plovdiv";
             Console.WriteLine(User.TownName);
             User user1 = new User()
@@ -32,8 +35,10 @@
             SwissKnife.WriteSchoolName();
 
 
-            string magicWord = SwissKnife.SyntesizeWisdom("Obicham shopskata salata",2);
+            string magicWord = SwissKnife.SyntesizeWisdom("Obicham shopskata salata");
             Console.WriteLine(magicWord);
+
+        
         }
     }
     public class User
@@ -82,7 +87,7 @@
             return a - b;
         }
 
-        public static string SyntesizeWisdom(string input,int numberOfLetter)
+        public static string SyntesizeWisdom(string input,int numberOfLetter=2)
         {
             string result = "";
             for (int i = 0; i < input.Length; i++)
@@ -94,6 +99,21 @@
             }
             return result;
         }
+
+
+        public static int FindStudent(string name)
+        {
+            return 5;
+        }
+        public static int FindStudent(int egn)
+        {
+            return 15;
+        }
+        public static int FindStudent(string name,int egn)
+        {
+            return 5;
+        }
+
 
 
     }
