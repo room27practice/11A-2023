@@ -3,10 +3,7 @@
     internal class Program
     {
         static void Main()
-        {
-           
-
-
+        {     
             User.TownName = "Plovdiv";
             Console.WriteLine(User.TownName);
             User user1 = new User()
@@ -37,7 +34,6 @@
 
             string magicWord = SwissKnife.SyntesizeWisdom("Obicham shopskata salata");
             Console.WriteLine(magicWord);
-
         
         }
     }
@@ -66,7 +62,6 @@
         {
             return num.ToString();
         }
-
     }
 
     public static class SwissKnife
