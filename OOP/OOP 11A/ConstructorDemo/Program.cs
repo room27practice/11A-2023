@@ -44,6 +44,12 @@ namespace ConstructorDemo
                     WebSiteURL = "www.krasi-plant.com"
                      },
             };
+            // Food, BeverageAlcohol, BeverageNonAlcohol, CleaningSupplies, Clothing
+            proizvoditeli.Add(new Manufacturer());
+            proizvoditeli.Add(new Manufacturer("Hristiqn", "+359888753", "vuzdoh.com", "hristiqn@abv.bg"));
+
+
+
             Product product = new Product
             {
                 Name = "Prah za prane LEX",
@@ -82,9 +88,11 @@ namespace ConstructorDemo
 
     public class Manufacturer
     {
+        private string telephone;
+        public string Telephone { get => telephone; set => telephone = value; }
+
         public int Id { get; set; }
         public string Name { get; set; } = "Asen";
-        public string Telephone { get; set; }
         public string WebSiteURL { get; set; }
         public string Email { get; set; }
 
@@ -102,7 +110,7 @@ namespace ConstructorDemo
         public Manufacturer(string name, string telephone, string webSiteURL, string email)
         {
             Name = name;
-            Telephone = telephone;
+            this.telephone = telephone;
             WebSiteURL = webSiteURL;
             Email = email;
         }
