@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConstructorDemo", "Construc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CandyShop", "CandyShop\CandyShop.csproj", "{8C4B03FC-6946-4619-BAE8-44F3BFEFB7C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticConstructorsDestructorsStackAndHeap", "StaticConstructorsDestructorsStackAndHeap\StaticConstructorsDestructorsStackAndHeap.csproj", "{2954402C-2839-4BF7-85E4-15445B5616CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticConstructorsDestructorsStackAndHeap", "StaticConstructorsDestructorsStackAndHeap\StaticConstructorsDestructorsStackAndHeap.csproj", "{2954402C-2839-4BF7-85E4-15445B5616CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackAndHeap", "StackAndHeap\StackAndHeap.csproj", "{7C5F5BCF-709B-4ABE-A6CD-0A5949B9EA7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{2954402C-2839-4BF7-85E4-15445B5616CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2954402C-2839-4BF7-85E4-15445B5616CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2954402C-2839-4BF7-85E4-15445B5616CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C5F5BCF-709B-4ABE-A6CD-0A5949B9EA7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C5F5BCF-709B-4ABE-A6CD-0A5949B9EA7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C5F5BCF-709B-4ABE-A6CD-0A5949B9EA7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C5F5BCF-709B-4ABE-A6CD-0A5949B9EA7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
