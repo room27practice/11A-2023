@@ -4,6 +4,87 @@
     {
         static void Main()
         {
+            //TestDemo();
+            List<Candy> shopItems = new List<Candy>();
+
+            #region FirstOption
+            FillData1stOption(shopItems);
+            #endregion
+
+            #region SecondOption
+            //FillData2ndOption(shopItems);
+            #endregion
+            Console.WriteLine("List of Products In our Shop:");
+            for (int i = 0; i < shopItems.Count(); i++)
+            {
+                Candy currentCandy = shopItems[i];
+                Console.WriteLine($"{i}. {currentCandy.Name} - {currentCandy.PriceUSD:F2}$.");
+            }
+            while (true)
+            {
+                Console.WriteLine("What do you want to buy? Insert Number-Quantity (1-3)/ Or END");
+                string input = Console.ReadLine();
+                if (input == "END")
+                {
+                    break;
+                }
+                int[] choiseOfProducts = input.Split("-").Select(x => int.Parse(x)).ToArray();
+                int index = choiseOfProducts[0];
+                int ammount = choiseOfProducts[1];
+                shopItems[index].SellAmmount(ammount);
+                Console.WriteLine($"you have purchased {shopItems[index].Name}x{ammount}!");
+            }
+
+            PrintData(shopItems);
+        }
+
+        private static void PrintData(List<Candy> shopItems)
+        {
+            decimal totalCost = 0;
+            foreach (Candy product in shopItems.Where(x=>x.CalculateProfit()>0))
+            {
+                totalCost+= product.CalculateProfit();
+                Console.WriteLine($"{product.Name}x{product.Sold} [{product.PriceUSD}]={product.CalculateProfit()} ");
+            }
+            Console.WriteLine($"Total Money Bill: {totalCost}");
+        }
+
+        private static void FillData2ndOption(List<Candy> shopItems)
+        {
+            while (true)
+            {
+                //“{Име}; {Калории}; {Тегло}; {Цена}; {ТипНа изделието}”
+                string input = Console.ReadLine();//"Donut; 500; 125; 0.49; Pretzels" или "END"
+                if (input == "END")
+                {
+                    break;
+                }
+                shopItems.Add(new Candy(input));
+            }
+        }
+
+        private static void FillData1stOption(List<Candy> shopItems)
+        {
+            while (true)
+            {
+                //“{Име}; {Калории}; {Тегло}; {Цена}; {ТипНа изделието}”
+                string[] inputArr = Console.ReadLine().Split("; ");//Donut; 500; 125; 0,49; Pretzels
+                if (inputArr[0] == "END")
+                {
+                    break;
+                }
+
+                string name = inputArr[0];
+                int calories = int.Parse(inputArr[1]);
+                double weight = double.Parse(inputArr[2]);
+                decimal price = decimal.Parse(inputArr[3]);
+                FamilyType type = Enum.Parse<FamilyType>(inputArr[4]);
+                shopItems.Add(new Candy(name, calories, weight, price, type));
+            }
+        }
+
+        private static void TestDemo()
+        {
             var candy = new Candy();
             var candy2 = new Candy(false);
             var candy3 = new Candy(true);
@@ -12,7 +93,6 @@
             Console.WriteLine(candy.Weight);
             candy.Weight = 300;
             //  candy.Ammount = 223;
-
         }
     }
     public class Candy
@@ -43,7 +123,21 @@
         {
             FamilyType = famType;
         }
+
+        #region SecondOption
+        public Candy(string input) : this()
+        {
+            var inputArr = input.Split("; ");
+            Name = inputArr[0];
+            Calories = int.Parse(inputArr[1]);
+            Weight = double.Parse(inputArr[2]);
+            PriceUSD = decimal.Parse(inputArr[3]);
+            FamilyType = Enum.Parse<FamilyType>(inputArr[4]);
+        }
+        #endregion
+
         public string Name { get; private set; }
+        public int Sold { get => totalSold; }
         public int Calories
         {
             get { return calories; }
@@ -131,8 +225,11 @@
         Bonbon,
         Cake,
         Licorice,
-        Pretsels,
+        Pretzels,
         ShugarMagic,
-        FruitPower
+        FruitPower,
+        Waffle,
+        Snacks,
+        Unspecified
     }
 }
