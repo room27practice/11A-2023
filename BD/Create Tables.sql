@@ -24,6 +24,7 @@ CREATE TABLE Peaks(
 Id INT PRIMARY KEY IDENTITY,
 Name NVARCHAR(20) NOT NULL,
 Height INT NOT NULL,
+AverageTemp DECIMAL(5,2),
 MountainID INT NOT NULL 
 CONSTRAINT FK_Peaks_Mountains
 FOREIGN KEY REFERENCES Mountains(Id)
@@ -39,9 +40,20 @@ INSERT INTO Mountains VALUES
 ('Pirin',1),
 ('Rila',1)
 
-
 SELECT * FROM Countries
 SELECT * FROM Mountains
 SELECT * FROM Peaks
 
+DROP TABLE Peaks
 
+INSERT INTO Peaks(MountainID, Height,Name, AverageTemp) VALUES
+(4, 2925,'Musala',-8.5),
+(2,2255,'Mechi Chalk', null)
+
+INSERT INTO Peaks(MountainID, Height,Name, AverageTemp) VALUES
+(1, 1493, 'FeldBerg' , -20.3)
+
+DELETE FROM Peaks
+WHERE Name='FeldBERG' OR Height>3000
+
+TRUNCATE TABLE Peaks
