@@ -6,11 +6,9 @@
         {
             //TestDemo();
             List<Candy> shopItems = new List<Candy>();
-
             #region FirstOption
             FillData1stOption(shopItems);
             #endregion
-
             #region SecondOption
             //FillData2ndOption(shopItems);
             #endregion
@@ -34,21 +32,18 @@
                 shopItems[index].SellAmmount(ammount);
                 Console.WriteLine($"you have purchased {shopItems[index].Name}x{ammount}!");
             }
-
             PrintData(shopItems);
         }
-
         private static void PrintData(List<Candy> shopItems)
         {
             decimal totalCost = 0;
-            foreach (Candy product in shopItems.Where(x=>x.CalculateProfit()>0))
+            foreach (Candy product in shopItems.Where(x => x.CalculateProfit() > 0))
             {
-                totalCost+= product.CalculateProfit();
+                totalCost += product.CalculateProfit();
                 Console.WriteLine($"{product.Name}x{product.Sold} [{product.PriceUSD}]={product.CalculateProfit()} ");
             }
             Console.WriteLine($"Total Money Bill: {totalCost}");
         }
-
         private static void FillData2ndOption(List<Candy> shopItems)
         {
             while (true)
@@ -62,7 +57,6 @@
                 shopItems.Add(new Candy(input));
             }
         }
-
         private static void FillData1stOption(List<Candy> shopItems)
         {
             while (true)
@@ -73,7 +67,6 @@
                 {
                     break;
                 }
-
                 string name = inputArr[0];
                 int calories = int.Parse(inputArr[1]);
                 double weight = double.Parse(inputArr[2]);
@@ -82,7 +75,6 @@
                 shopItems.Add(new Candy(name, calories, weight, price, type));
             }
         }
-
         private static void TestDemo()
         {
             var candy = new Candy();
@@ -123,7 +115,6 @@
         {
             FamilyType = famType;
         }
-
         #region SecondOption
         public Candy(string input) : this()
         {
@@ -135,7 +126,6 @@
             FamilyType = Enum.Parse<FamilyType>(inputArr[4]);
         }
         #endregion
-
         public string Name { get; private set; }
         public int Sold { get => totalSold; }
         public int Calories
@@ -219,7 +209,6 @@
             return totalSold * PriceUSD;
         }
     }
-
     public enum FamilyType
     {
         Bonbon,
