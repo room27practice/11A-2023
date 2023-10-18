@@ -78,11 +78,16 @@ INSERT INTO Towns(Id,Name,Population,PostCode,CountryId,Region ) VALUES
 ,(5,'Kampala',1500000,'759125','UG', 5	)
 ,(6,'Kaolinovo',1000,'9701','BG', 1	)
 
-INSERT INTO Towns(Name,Population, PostCode, CountryId, Region ) VALUES
- ('Varna',350000,'1700','BG', 6	)
+INSERT INTO Towns(Id,Name,Population, PostCode, CountryId, Region ) VALUES
+ (77,'Varna',350000,'1700','BG', 77	)
+
+ DELETE FROM Towns
+ WHERE Id =77
+
  
 SELECT * FROM Countries
 SELECT * FROM Towns
+SELECT * FROM People
 
 DROP TABLE Towns
 DROP TABLE Countries
