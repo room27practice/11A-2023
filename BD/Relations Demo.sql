@@ -38,11 +38,6 @@ Email nvarchar(32) UNIQUE NOT NULL,
 Proffession nvarchar(32) 
 )
 
-
-
-
-
-
 CREATE TABLE PeopleShops(
 PersonId nvarchar(4) NOT NULL
 CONSTRAINT FK_PeopleShops_People
