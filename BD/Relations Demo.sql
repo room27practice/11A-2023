@@ -89,8 +89,9 @@ SELECT * FROM People
 SELECT * FROM Shops
 SELECT * FROM PeopleShops
 
-
-SELECT p.Name AS FullName,s.Name as Visited,pur.Description FROM People as p
+/* Да се извадят всички хора завършващи на ova техните посетени магазини и описанието на магазина
+*/
+SELECT TOP(3) p.Email AS [Имейл],p.Name AS [Имена],s.Name as [Име на магазин],pur.Description AS [Дейност] FROM People as p
 JOIN PeopleShops as ps
 ON p.EGN=ps.PersonId
 JOIN Shops as s
@@ -99,4 +100,4 @@ JOIN Addresses AS a
 ON a.Id=s.AddressId
 JOIN Purposes as pur
 ON pur.Id=s.PurposeId
-WHERE Name LIKE '%ova'
+WHERE p.Name LIKE '%ova'
