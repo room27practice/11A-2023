@@ -1,19 +1,28 @@
-div.images{
-    background-color: antiquewhite;
-    padding:1rem;
+@import url("./reseter.css");
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,200;0,400;1,400;1,700&display=swap');
+
+html{
+    /* font: 16px/1.4 ”PT Sans”, Arial, Helvetica, sans-serif; */
+    font-size:16px;
+    line-height: 1.4;
+    font-family:”PT Sans”, Arial, Helvetica, sans-serif;
 }
 
-div.images>img{
-    width: 16rem;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
+
+
+.spl-font{
+    font-family: 'Playpen Sans', cursive;
 }
 
-div.images>img:nth-child(even){
-    border-radius: 8rem;
-    border:5px solid darkgreen;
+.bg-font{
+    font-family: 'Alumni Sans', sans-serif;
 }
 
-mark{
-    background-color: rgb(0, 255, 123);
+.w-100{
+    font-weight: 100;
 }
+.w-500{
+    font-weight: 500;
+}
+
