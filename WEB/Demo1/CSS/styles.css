@@ -7,8 +7,8 @@ html{
     font-size:16px;
     line-height: 1.4;
     font-family:”PT Sans”, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
-
 
 
 .spl-font{
