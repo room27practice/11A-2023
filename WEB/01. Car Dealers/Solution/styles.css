@@ -61,6 +61,9 @@ div.main {
     margin: 0 auto;
     min-width: 30rem;
 }
+div.content{
+    display:flex;
+}
 
 div.photo {
     max-width: 45%;
