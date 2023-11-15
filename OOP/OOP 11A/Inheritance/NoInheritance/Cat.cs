@@ -24,14 +24,14 @@ namespace NoInheritance
         }
         public string Name { get; set; }
         public int Age { get; set; }
-        public int Lives { get; set; } = 9;
         public double Weight { get; set; }
+        public int Lives { get; set; } = 9;
+        public CatBreed Breed { get; set; }
         public int RunForTimeSeconds(double distanceMeters)
         {
             int timeRequired = (int)Math.Ceiling(distanceMeters / speedMetersPerSecond);
             return timeRequired;
         }
-        public CatBreed Breed { get; set; }
         public void Meaw()
         {
             Console.WriteLine("Miew Meaw");
