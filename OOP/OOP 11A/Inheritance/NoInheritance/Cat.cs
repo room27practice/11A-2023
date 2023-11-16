@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace NoInheritance
 {
 
-    public class Cat
+    public   class Cat
     {
         private double speedMetersPerSecond = 4.0;
         public Cat(string name, int age, double weight)
