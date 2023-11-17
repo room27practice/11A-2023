@@ -1,6 +1,7 @@
 ﻿using CandyShop;
 using Inheritance;
 using Inheritance.SuperList;
+using SuperPosition_Delegation;
 
 public class Program
 {
@@ -34,6 +35,16 @@ public class Program
         Console.WriteLine(string.Join(" - ",experiment ));
 
 
+
+
+    }
+
+
+    public static void TestSuperpositionDemo()
+    {
+        var phone = new SmartPhone("XMASS23");
+        phone.MakeBrighter();
+       
 
 
     }
