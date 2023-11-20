@@ -29,7 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NestingClassesDEMO", "Nesti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopRelationsMirrorDB", "ShopRelationsMirrorDB\ShopRelationsMirrorDB.csproj", "{066B846F-9CFA-413C-9111-666BB3C87C75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{7353DD18-1571-4641-8203-FCD9278D5704}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\Inheritance.csproj", "{7353DD18-1571-4641-8203-FCD9278D5704}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Furniture", "Furniture\Furniture.csproj", "{E68BDF9D-3BB3-43BF-92B7-7CCCCE3F9B21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceExercise", "InheritanceExercise\InheritanceExercise.csproj", "{9AC51A62-8A54-401A-84B6-49DB0BCA01C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +97,14 @@ Global
 		{7353DD18-1571-4641-8203-FCD9278D5704}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7353DD18-1571-4641-8203-FCD9278D5704}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7353DD18-1571-4641-8203-FCD9278D5704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E68BDF9D-3BB3-43BF-92B7-7CCCCE3F9B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E68BDF9D-3BB3-43BF-92B7-7CCCCE3F9B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E68BDF9D-3BB3-43BF-92B7-7CCCCE3F9B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E68BDF9D-3BB3-43BF-92B7-7CCCCE3F9B21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AC51A62-8A54-401A-84B6-49DB0BCA01C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AC51A62-8A54-401A-84B6-49DB0BCA01C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AC51A62-8A54-401A-84B6-49DB0BCA01C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AC51A62-8A54-401A-84B6-49DB0BCA01C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

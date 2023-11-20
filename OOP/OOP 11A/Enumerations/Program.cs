@@ -1,6 +1,4 @@
-﻿using System.Reflection.PortableExecutable;
-
-namespace Enumerations
+﻿namespace Enumerations
 {
     internal class Program
     {

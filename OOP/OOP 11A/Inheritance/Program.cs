@@ -1,6 +1,4 @@
-﻿using CandyShop;
-using Inheritance;
-using Inheritance.SuperList;
+﻿using Inheritance.SuperList;
 using SuperPosition_Delegation;
 
 public class Program
