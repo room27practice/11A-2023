@@ -1,9 +1,23 @@
-﻿namespace CandyShop
+﻿using Errors;
+
+namespace CandyShop
 {
     internal class Program
     {
         static void Main()
         {
+            //PartyException Test
+            var candy1 = new Candy();
+            try
+            {
+                candy1.SetCaloriesAdmin("greshna", 1000);
+
+            }
+            catch (Exception greshka)
+            { }
+
+
+
             //TestDemo();
             List<Candy> shopItems = new List<Candy>();
             #region FirstOption
@@ -177,6 +191,7 @@
             else
             {
                 Console.WriteLine("You shall not Pass!!!");
+                throw new PartyException("Kofti sluchai!");
             }
         }
         public void IncreaseAmmount(int ammount, string pwd = "")

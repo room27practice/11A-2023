@@ -7,14 +7,13 @@
         {
             Name = name;
             Price = price;
-            Weight = -1;
+            Weight = 0;
             Manufacturer = "StoreShop";
             Material = Material.Unidentified;
         }
 
-        public Furniture(string name, decimal price, double weight, string manufacturer, Material material) : this(name, price)
-        {
-            Weight = weight;
+        public Furniture(string name, decimal price,  string manufacturer, Material material) : this(name, price)
+        {         
             Manufacturer = manufacturer;
             Material = material;
         }

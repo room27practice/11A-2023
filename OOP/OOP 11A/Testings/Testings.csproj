@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Errors\Errors.csproj" />
+    <ProjectReference Include="..\Furniture\Furniture.csproj" />
   </ItemGroup>
 
 </Project>
