@@ -7,7 +7,7 @@
             Height = h;
         }
 
-        public Chair(string name, decimal price, double weight, string manufacturer, Material material, double h) : base(name, price, weight, manufacturer, material)
+        public Chair(string name, decimal price, double weight, string manufacturer, Material material, double h) : base(name, price,  manufacturer, material)
         {
             Height = h;        
         }

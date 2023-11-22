@@ -2,8 +2,8 @@
 {
     public class Bed : Furniture
     {
-        public Bed(string name, decimal price, double weight, double h, double width, double length, BedSpec bs)
-            : base(name, price, weight, "Kuncho-EOOD", Material.Wood)
+        public Bed(string name, decimal price, double h, double width, double length, BedSpec bs)
+            : base(name, price,  "Kuncho-EOOD", Material.Wood)
         {
             Height = h;
             Width = width;
