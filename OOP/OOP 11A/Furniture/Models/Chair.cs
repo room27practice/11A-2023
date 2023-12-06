@@ -14,6 +14,7 @@
         public double Height { get; set; }
         public bool CanRotate { get; set; }= false;
         public bool HasSpring { get; set; } = false;
+        public bool HasHandlers { get; set; } = false;
         public double WeightSupport { get; set; } = 120;
     }
 
