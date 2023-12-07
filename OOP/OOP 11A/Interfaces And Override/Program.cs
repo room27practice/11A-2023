@@ -1,13 +1,10 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace Interfaces_And_Override
+﻿namespace Interfaces_And_Override
 {
     internal class Program
     {
         static void Main()
         {
             // Demo1();
-
             var dog1 = new Dog("Sharo");
             var dog2 = new Dog("Jaro");
             var dog3 = new Dog("Haro");
@@ -19,19 +16,18 @@ namespace Interfaces_And_Override
             List<INamableAndDiable> animalsList = new List<INamableAndDiable>();
             animalsList.Add(dog1);
             animalsList.Add(cat1);
-        
+            int a = cat1.Eat();
         }
 
-        public class Dog
+        public class Dog : INamableAndDiable
         {
             private bool isAlive = true;
-
             public Dog(string name)
             {
                 Name = name;
             }
-
-            public string  Name { get; set; }
+            public string Name { get; set; }
+            public int Age { get; set; }
             public void Bark()
             {
                 Console.WriteLine("Woof Woof");
@@ -41,18 +37,22 @@ namespace Interfaces_And_Override
                 Console.WriteLine("It is dead!");
                 isAlive = false;
             }
+            public int Eat()
+            {
+                return -15;
+            }
         }
 
-        public class Cat:INamableAndDiable
+        public class Cat : INamableAndDiable
         {
-            public Cat(string name, int lives=9)
+            public Cat(string name, int lives = 9)
             {
                 Name = name;
                 Lives = lives;
             }
-
             public string Name { get; set; }
             public int Lives { get; set; }
+            public int Age { get;  }
             public void Miew()
             {
                 Console.WriteLine("Miew Miew");
@@ -61,6 +61,10 @@ namespace Interfaces_And_Override
             {
                 Lives--;
             }
+            public int Eat()
+            {
+                return 15;
+            }
         }
 
 
@@ -68,6 +72,9 @@ namespace Interfaces_And_Override
         {
             string Name { get; set; }
             void Die();
+
+            int Eat();
+            int Age { get; }
         }
 
 
