@@ -43,7 +43,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FurnitureStore", "Furniture
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces And Override", "Interfaces And Override\Interfaces And Override.csproj", "{99884203-2DF4-45F6-8EE3-4CEC07A5B3BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CounterStrike", "CounterStrike\CounterStrike.csproj", "{1705C84C-29CC-465A-8910-70E3D02492B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CounterStrike", "CounterStrike\CounterStrike.csproj", "{1705C84C-29CC-465A-8910-70E3D02492B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dictionaries", "Dictionaries\Dictionaries.csproj", "{015209A2-B776-4A13-BA95-B61453942602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{D61092B3-3CF5-41BF-8EB6-D7830AE47582}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +139,14 @@ Global
 		{1705C84C-29CC-465A-8910-70E3D02492B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1705C84C-29CC-465A-8910-70E3D02492B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1705C84C-29CC-465A-8910-70E3D02492B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{015209A2-B776-4A13-BA95-B61453942602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{015209A2-B776-4A13-BA95-B61453942602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{015209A2-B776-4A13-BA95-B61453942602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{015209A2-B776-4A13-BA95-B61453942602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D61092B3-3CF5-41BF-8EB6-D7830AE47582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D61092B3-3CF5-41BF-8EB6-D7830AE47582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D61092B3-3CF5-41BF-8EB6-D7830AE47582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D61092B3-3CF5-41BF-8EB6-D7830AE47582}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
