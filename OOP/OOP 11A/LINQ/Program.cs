@@ -13,6 +13,12 @@
                     Enum.Parse<Breed>(strArr[0])
                         )).ToList();
 
+
+            // "D-Spiner-15 years"
+            List<string> names = dogs.OrderBy(d => d.Age)
+                .Select(d => $"{d.Breed.ToString()[0]}-{d.Name}-{d.Age} years").ToList();
+
+
             while (true)
             {
                 Console.WriteLine("Please select dog breed:");
@@ -23,6 +29,10 @@
                     .OrderByDescending(x => x.Name[0])
                     .ToArray();
 
+               
+                
+                
+                
                 Console.WriteLine($"{selectedTypeOfDog} dogs are :" + dogsFd.Count());
 
                 foreach (var dog in dogsFd)
@@ -30,6 +40,10 @@
                     Console.WriteLine(dog);
                 }
                 Console.WriteLine(new string('=', 40));
+
+
+
+
             }
         }
     }

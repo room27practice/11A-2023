@@ -47,7 +47,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CounterStrike", "CounterStr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dictionaries", "Dictionaries\Dictionaries.csproj", "{015209A2-B776-4A13-BA95-B61453942602}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{D61092B3-3CF5-41BF-8EB6-D7830AE47582}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ", "LINQ\LINQ.csproj", "{D61092B3-3CF5-41BF-8EB6-D7830AE47582}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaExpressions", "LambdaExpressions\LambdaExpressions.csproj", "{948ECEC5-8441-4E54-89F9-13F1869A6A81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic", "Generic\Generic.csproj", "{CCFD8359-8499-4A14-A5C7-FCC4D68D1773}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +151,14 @@ Global
 		{D61092B3-3CF5-41BF-8EB6-D7830AE47582}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D61092B3-3CF5-41BF-8EB6-D7830AE47582}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D61092B3-3CF5-41BF-8EB6-D7830AE47582}.Release|Any CPU.Build.0 = Release|Any CPU
+		{948ECEC5-8441-4E54-89F9-13F1869A6A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{948ECEC5-8441-4E54-89F9-13F1869A6A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{948ECEC5-8441-4E54-89F9-13F1869A6A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{948ECEC5-8441-4E54-89F9-13F1869A6A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCFD8359-8499-4A14-A5C7-FCC4D68D1773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCFD8359-8499-4A14-A5C7-FCC4D68D1773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCFD8359-8499-4A14-A5C7-FCC4D68D1773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCFD8359-8499-4A14-A5C7-FCC4D68D1773}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
