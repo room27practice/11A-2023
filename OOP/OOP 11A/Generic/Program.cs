@@ -13,13 +13,13 @@
                 .Split(" ").Select(w => w.Replace(".", "").ToUpper()).ToList();
 
             var special_words = GetNthElementsFromCollection(intList, 2);
-                Console.WriteLine(string.Join("\n", special_words));
+            Console.WriteLine(string.Join("\n", special_words));
 
 
-            var gencho = new Person<Person,string>("Gencho");
-            var johny = new Person<decimal,int>("Johny");
+            var gencho = new Person<Dog, string>("Gencho");
+            var johny = new Person<decimal, int>("Johny");
 
-            gencho.SpecialItem = johny;
+            gencho.SpecialItem = new Dog();
             johny.SpecialItem = 15.75m;
             Console.WriteLine(gencho.GiveTheSpecialItem());
         }
@@ -59,27 +59,21 @@
         }
 
         public static List<T> GetNthElementsFromCollection<T>(ICollection<T> colection, int n = 2)
-        where T:IComparable<T>
+        where T : IComparable<T>
         {
             var arr = colection.ToArray();
             var answer = new List<T>();
 
-            for (int i = 0; i < list.Count(); i += n)
+            for (int i = 0; i < colection.Count(); i += n)
             {
                 answer.Add(arr[i]);
             }
             return answer;
         }
-
-
-
         //  public static double SumTwoNumbers(double a, double b) => a + b;
-
-
-
     }
 
-    public class Person<T,S>
+    public class Person<T, S>
     {
         public S Id { get; set; }
         public Person(string name)
@@ -94,6 +88,8 @@
             return SpecialItem;
         }
     }
+    public class Dog
+    {    }
 
 
 }
