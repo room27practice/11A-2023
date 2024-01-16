@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Stuff</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./CSS/reseter.css">
+    <link rel="stylesheet" href="./CSS/contactsStyles.css">
+</head>
+
+<body>
+    <div class="btn-group">
+        <a href="./index.html" class="btn btn-success" aria-current="page">Индекс</a>
+        <a href="#" class="btn btn-success active">Формичката</a>
+      </div>
+    <h3 class="title">Резервация за ресторант</h3>
+    <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Открий мистерията
+        </a>
+    </p>
+     
+    <main class="content">
+        <form>
+            <div class="mb-3">
+                <label for="nameAndFamily" class="form-label">Име и фамилия</label>
+                <input type="text" placeholder="Write your name here!" class="form-control" id="nameAndFamily"
+                    aria-describedby="nameAndFamilyHelp">
+                <div id="nameAndFamilyHelp" class="form-text">We'll never share your name with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="seatsCount" class="form-label">Бройка места:</label>
+                <input type="number" min="1" max="10" step="1" class="form-control" id="seatsCount">
+            </div>
+
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck1">V.I.P.</label>
+              
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck2">Candles</label>
+              
+                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck3">Оркестър</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck4">Цигулка на ошенце</label>
+              
+                <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck5">Огнено Шоу</label>
+              
+                <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck6">Чупене на чинии</label>
+            </div>
+
+            <div class="form-floating my-4">
+                <textarea class="form-control" placeholder="Напишете специални особености на резервацията" id="specificsOfOrder"></textarea>
+                <label for="specificsOfOrder">Особености при резервацията:</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <label class="form-check-label" for="smokersArea">За пушачи</label>
+                <input class="form-check-input" type="checkbox" role="switch" id="smokersArea">
+            </div>
+
+            <select class="form-select form-select-lg mb-3" aria-label="Избери адрес">
+                <option selected disabled>Избери нещо!</option>
+                <option value="1">Шумен Еверест</option>
+                <option value="2">Шумен Тракия</option>
+                <option value="3">Шумен Бялата Пръст</option>
+              </select>
+
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+
+
+        <form method="GET">
+            <div class="input-group">
+                <span class="input-group-text">Име</span>
+                <input type="text" aria-label="Име" class="form-control">
+                <input type="text" aria-label="Фамилия" class="form-control">
+            </div>
+
+
+        </form>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Скрито съдържание което се показва като цъкнем бутона
+            </div>
+          </div>
+    </main>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

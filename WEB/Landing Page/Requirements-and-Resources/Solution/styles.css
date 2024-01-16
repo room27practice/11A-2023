@@ -1,0 +1,51 @@
+main {
+    max-width: 65em;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(240, 228, 228);
+}
+
+nav.header {
+    background-color: rgb(249, 55, 0);
+    color: white;
+    display:flex;
+    justify-content: space-between;
+    padding: 0.5em 2em;
+
+}
+
+nav.header>ul {
+    display:flex;
+    list-style-type: none;
+}
+
+nav.header>ul>li{
+    margin-right:1em;
+}
+
+nav.header a{
+    text-decoration: none;
+    color:white;
+}
+i.fa-user{
+    font-size:0.7em;
+    margin-right:0.3em;
+}
+
+div.search-bar{
+    display: flex;
+}
+div.search-bar>input{
+     min-width: 16rem;
+    border: none;
+    padding: 0.5rem;  
+}
+
+button.srch-btn{
+    border: none;
+    background-color: rgb(182,175,175);
+    color: white;
+    font-size: 0.8em;
+    width: 2.6em;
+    height: 2.4rem;
+}

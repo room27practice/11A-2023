@@ -10,10 +10,16 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="stylesheet" href="./CSS/reseter.css">
+    <link rel="stylesheet" href="./CSS/indexStyles.css">
 </head>
 
 <body>
+    <div class="btn-group">
+        <a href="#" class="btn btn-success active" aria-current="page">Индекс</a>
+        <a href="./contacts.html" class="btn btn-success">Формичката</a>
+      </div>
     <h3 class="title">Bootstrap Neshta</h3>
     <main class="content">
         <section class="pictures">
@@ -81,7 +87,9 @@
                 <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1822&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     class="card-img-top" alt="galaxy">
                 <div class="card-body">
-                    <h5 class="card-title text-danger"><i class="fas fa-person-booth"></i> Подобрение в стая 27</h5>
+                    <a class="link-opacity-10" href="./contacts.html">
+                        <h5 class="card-title text-danger"><i class="fas fa-person-booth"></i> Подобрение в стая 27</h5>
+                    </a>
                     <p class="card-text">След дълги години употреба на оранжевите бюра, бяха сменени с алуминиеви</p>
                 </div>
                 <ul class="list-group list-group-flush">
@@ -90,6 +98,44 @@
                     <li class="list-group-item"><i class="fas fa-chair"></i> Масите са променени</li>
                     <li class="list-group-item"><i class="fab fa-apple"></i> Компютрите са нови</li>
                 </ul>
+
+
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <i class="fas fa-city"></i> Дограмата се смени
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Дограмата вече е алуминиева трикамерна KMG. Стъклопакета е Sunergy двоен. Цвета е сив.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
                 <div class="card-body d-flex justify-content-between">
                     <a href="https://web.mon.bg/bg/1682" class="btn btn-success">Вижте повече <i
                             class="far fa-eye"></i></a>
@@ -201,6 +247,7 @@
 
         <section class="location">
             <h3>Where are we?</h3>
+
             <div class="locs">
                 <div>
                     <iframe class="mr-4 d-block"
@@ -215,10 +262,32 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-
         </section>
-
     </main>
+    <div class="things">
+        <div class="alert alert-danger" role="alert">
+            !!!Внимание извършва се техническа проверка!!!
+          </div>
+          <div class="alert alert-warning" role="alert">
+            A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          </div>
+
+
+
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Затваряем алърт!</strong> Този сайт използва бисквитки съгласни ли сте?.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+
+        
+
+    </div>
+
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
