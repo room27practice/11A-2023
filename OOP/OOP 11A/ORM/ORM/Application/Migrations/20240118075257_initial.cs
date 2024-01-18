@@ -4,7 +4,7 @@
 
 namespace Application.Migrations
 {
-    public partial class INIT : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -33,6 +33,8 @@ namespace Application.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Grade = table.Column<int>(type: "int", nullable: false),
                     GradeLetter = table.Column<string>(type: "nvarchar(1)", nullable: false),
+                    GSM = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     RoomId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -51,6 +53,7 @@ namespace Application.Migrations
                 table: "Students",
                 column: "RoomId");
         }
+
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

@@ -1,4 +1,6 @@
-﻿namespace Application.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Application.Models
 {
     public class Student
     {
@@ -17,6 +19,12 @@
         public string Name { get; set; }
         public int Grade { get; set; }
         public char GradeLetter { get; set; }
+
+        [MinLength(16),Phone]
+        public string GSM { get; set; }
+
+        [EmailAddress]
+        public string Email { get; set; }
 
         //FK
         public int RoomId { get; set; }
