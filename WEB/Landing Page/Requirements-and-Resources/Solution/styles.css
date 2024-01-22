@@ -1,3 +1,12 @@
+:root{
+    /* --orange-main-color:rgb(249, 55, 0); */
+    --orange-main-color:MAGENTA;
+    --my-cursor-style: url(../Media/my-cursor.png) 10 10, crosshair;
+}
+
+
+
+
 main {
     max-width: 60em;
     min-height: 100vh;
@@ -6,7 +15,7 @@ main {
 }
 
 nav.header {
-    background-color: rgb(249, 55, 0);
+    background-color: var(--orange-main-color);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -71,6 +80,9 @@ section.pics>div>img {
     width: 100%;
     height: 100%;
 }
+section.pics>div>img:hover{
+    cursor: var(--my-cursor-style);
+}
 
 section.pics>div>p {
     color: rgb(125, 125, 125);
@@ -90,7 +102,7 @@ section.content {
 }
 
 #interact>h3 {
-    color: rgb(249, 55, 0);
+    color:  var(--orange-main-color);
 }
 
 #interact>p {
@@ -103,7 +115,7 @@ section.content {
     border-radius: 0.25em;
     border: none;
     color: white;
-    background-color: rgb(249, 55, 0);
+    background-color:  var(--orange-main-color);
 }
 
 section.content>div:last-child {
@@ -189,6 +201,10 @@ footer>ul>li>button{
     border-radius: 0.3em;
     padding: 0.3em 2em;
     border: none;
+}
+
+footer>ul>li>button:hover{
+    cursor: var(--my-cursor-style);
 }
 
 .pt-025{

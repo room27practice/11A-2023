@@ -1,0 +1,33 @@
+div.experiment {
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    margin: 3em auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    h4 {
+        color: magenta;
+        text-align: center;
+    }
+
+    div.experiment {
+        text-align: start;
+        color: red;
+        background-color: yellow;
+    }
+}
+    @media only screen and (max-width: 700px) {
+ 
+    div.experiment {
+       
+        color: rgb(0, 21, 255);
+        background-color: rgb(255, 119, 0);
+        border-radius: 50px;
+        text-align: center;
+    }
+    h4{
+        display:none;
+    }
+}
